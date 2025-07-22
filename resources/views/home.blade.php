@@ -35,7 +35,22 @@
 </nav>
 
     <h1>Laravel Framework Web Numero uno</h1>
-    <h2>Nama: {{ $nama }}</h2>
-    <h2>Kelas: {{ $kelas }}</h2>
+    
+    <table>
+      <tr>
+        <th>Nama</th>
+        <th>Kelas</th>
+      </tr>
+      @foreach($siswas as $siswa)
+      <tr>
+        <td>{{ $siswa['nama'] }}</td>
+        <td>{{ $siswa['kelas'] }}</td>  
+      </tr>
+      @endforeach
+
+
+    </table>
+
+
 </body>
 </html>

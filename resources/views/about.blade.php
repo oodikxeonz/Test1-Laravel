@@ -34,6 +34,25 @@
   </div>
 </nav>
 
-    <h1>This is Amerikaa</h1>
+    <h1>{{$title}}</h1>
+    <div class="overflow-x-auto my-8">
+  <table class="min-w-full border border-gray-300 text-left rounded-md overflow-hidden">
+    <thead class="bg-gray-100 text-gray-700">
+      <tr>
+        <th class="px-6 py-3 border-b">Nama</th>
+        <th class="px-6 py-3 border-b">Kelas</th>
+      </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200">
+      @foreach($siswabu as $siswa)
+      <tr class="hover:bg-blue-50">
+        <td class="px-6 py-4">{{ $siswa['nama'] }}</td>
+        <td class="px-6 py-4">{{ $siswa['kelas'] }}</td>
+      </tr>
+      @endforeach
+    </tbody>
+  </table>
+</div>
+
 </body>
 </html>

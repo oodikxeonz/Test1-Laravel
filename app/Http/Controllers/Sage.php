@@ -10,8 +10,46 @@ class Sage extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        return view('about');
+    {$siswabu = [
+            ['nama' => 'Aoddi', 'kelas' => 'XI RPL'],
+            ['nama' => 'Faiz', 'kelas' => 'XI RPL'],
+            ['nama' => 'Rais', 'kelas' => 'XI RPL'],
+            ['nama' => 'Rafay', 'kelas' => 'XI RPL'],
+            ['nama' => 'Bima', 'kelas' => 'XI RPL'],
+            ['nama' => 'Ali', 'kelas' => 'XI RPL'],
+            ['nama' => 'Faisap', 'kelas' => 'XI RPL'],
+            ['nama' => 'Glenn', 'kelas' => 'XI RPL'],
+            ['nama' => 'TuanMuda', 'kelas' => 'XI RPL'],
+            ['nama' => 'Yusuf', 'kelas' => 'XI RPL'],
+            ['nama' => 'Sattar', 'kelas' => 'XI RPL'],
+            ['nama' => 'Shabira', 'kelas' => 'XI RPL'],
+            ['nama' => 'ghani', 'kelas' => 'XI RPL'],
+            ['nama' => 'Rangga', 'kelas' => 'XI RPL'],
+            ['nama' => 'Tristas', 'kelas' => 'XI RPL'],
+            ['nama' => 'Rafasyah', 'kelas' => 'XI RPL'],
+            ['nama' => 'Rafa', 'kelas' => 'XI RPL'],
+            ['nama' => 'Denis', 'kelas' => 'XI RPL'],
+            ['nama' => 'Aksaj', 'kelas' => 'XI RPL'],
+            ['nama' => 'Azzam', 'kelas' => 'XI RPL'],
+            ['nama' => 'Keyza', 'kelas' => 'XI RPL'],
+            ['nama' => 'Raditc', 'kelas' => 'XI RPL'],
+            ['nama' => 'Adit', 'kelas' => 'XI RPL'],
+            ['nama' => 'Rafka', 'kelas' => 'XI RPL'],
+            ['nama' => 'Hazel', 'kelas' => 'XI RPL'],
+            ['nama' => 'Thoriq', 'kelas' => 'XI RPL'],
+            ['nama' => 'TuanMuda', 'kelas' => 'XI RPL'],
+            ['nama' => 'zia', 'kelas' => 'XI RPL'],
+            ['nama' => 'Yunita', 'kelas' => 'XI RPL'],
+            
+        ];
+
+
+
+        return view('about',
+        ['title' => 'Daftar Siswa XI RPL',
+        ] , compact('siswabu')
+    );
+    
     }
 
     /**
